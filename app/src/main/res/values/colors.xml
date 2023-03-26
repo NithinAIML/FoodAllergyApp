@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#F04440</color>
+    <color name="colorPrimaryDark">#E22C29</color>
+    <color name="colorAccent">#F04440</color>-->
+
+    <!--Second Color here-->
+    <color name="colorPrimary">#006D5B</color>
+    <color name="colorPrimaryDark">#165A4F</color>
+    <color name="colorAccent">#006D5B</color>
+
+    <color name="colorReject">#f10008</color>
+    <color name="colorAccept">#06751f</color>
+
+    <color name="colorPrimaryDark_light">#59E3CC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="chat_white">#f6f6f6</color>
+    <color name="black">#020202</color>
+    <color name="text_view_color">#6F6F6F</color>
+    <color name="light_gray">#D8D8D8</color>
+    <color name="bg_color">#F6F6F8</color>
+    <color name="bg_color_profile">#EAEAEE</color>
+    <color name="gray">#8D8787</color>
+    <color name="gray_dark">#656262</color>
+    <color name="gray_shadow">#bfbab7</color>
+    <color name="gray_bg">#DFDDDC</color>
+
+    <color name="leave_pending">#f2b43d</color>
+    <color name="leave_approved">#36cc75</color>
+    <color name="leave_rejected">#e65d74</color>
+
+    //E-learning Colors.
+    <color name="color1">#E3FAF0</color>
+    <color name="color2">#FDE3DD</color>
+    <color name="color3">#DCE4F6</color>
+    <color name="color4">#FAF6E3</color>
+    <color name="color5">#F4DAE7</color>
+    <color name="color6">#E2E4FB</color>
+    <color name="color7">#DEF6F2</color>
+
+    <color name="present">#129c64</color>
+    <color name="present_light">#befee4</color>
+    <color name="present_light_week">#D0E1DA</color>
+    <color name="absent">#cb2e0b</color>
+    <color name="absent_light">#ffcec3</color>
+    <color name="leave">#385fb6</color>
+    <color name="leave_light">#c7d6f7</color>
+    <color name="half_day">#b69600</color>
+    <color name="half_day_light">#FAF2CE</color>
+    <color name="holiday">#d90b72</color>
+    <color name="holiday_light1">#FBCFE5</color>
+    <color name="holiday_light">#c7ff88</color>
+    <color name="payonline">#A5ABF1</color>
+    <color name="payonline_dark">#303895</color>
+    <color name="blue">#0B1AD6</color>
+    <color name="chat_send_message">#E4DFDF</color>
+    <color name="homework_color">#e65d74</color>
+    <color name="light_red">#78CDBF</color>
+    <color name="light_green">#D5E9E5</color>
+    <color name="link_color">#2737ea</color>
+    <color name="dark_red">#83060A</color>
+    <color name="sky_blue">#2196F3</color>
+    <color name="chart_color_sky_blue">#82B9EC</color>
+    <color name="chart_color_black">#5C5C5F</color>
+    <color name="ribun_color">#bb0007</color>
+    <color name="anual_percentage">#468300</color>
+    <color name="dark_blue">#1A316E</color>
+    <color name="skip">#0c398c</color>
+    <color name="submit">#1da23a</color>
+    <color name="review">#ff2f00</color>
+    <color name="orange">#F13206</color>
+    <color name="selectionColor">#ecf2fe</color>
+
+    <color name="red">#f3586b</color>
+    <color name="yellow">#e3e351</color>
+    <color name="green">#4cc082</color>
+
+    <color name="cal_event">#3ea2ff</color>
+    <color name="cal_holiday">#8cc990</color>
+
+    <!--=Time Table colors=-->
+    <color name="color_monday_dark">#0a814f</color>
+    <color name="color_monday_light">#befee4</color>
+    <color name="color_monday_lighter">#dcf9ed</color>
+
+    <color name="color_tuesday_dark">#aa280b</color>
+    <color name="color_tuesday_light">#fecec2</color>
+    <color name="color_tuesday_lighter">#f6e6e2</color>
+
+    <color name="color_wed_dark">#1f4390</color>
+    <color name="color_wed_light">#c7d6f7</color>
+    <color name="color_wed_lighter">#dee3f0</color>
+
+    <color name="color_thur_dark">#9c810a</color>
+    <color name="color_thur_light">#faf2ce</color>
+    <color name="color_thur_lighter">#fffcf0</color>
+
+    <color name="card_meeting">#F8F8F8</color>
+
+    <color name="color_fri_dark">#c20e68</color>
+    <color name="color_fri_light">#fbcfe6</color>
+    <color name="color_fri_lighter">#fbe5f1</color>
+
+    <color name="color_saturday_dark">#234ba5</color>
+    <color name="color_saturday_light">#c7d6f7</color>
+    <color name="color_saturday_lighter">#e3eaf9</color>
+
+    <!--===Testing Here=====-->
+    <!--First Color here-->
+    <color name="primaryColorRed">#D6060D</color>
+    <color name="primaryDarkColorRed">#AF050B</color>
+    <color name="secondaryColorRed">#D6060D</color>
+
+    <!--Second Color here-->
+    <color name="primaryColorPink">#F44336</color>
+    <color name="primaryDarkColorPink">#C5372D</color>
+    <color name="secondaryColorPink">#F44336</color>
+
+
+    <color name="attn_Preset">#006d5a</color>
+    <color name="attn_Absent">#d32d41</color>
+    <color name="attn_Late">#ea6a47</color>
+    <color name="attn_Leave">#1c4e80</color>
+    <color name="attn_Half_Day">#1c4e80</color>
+    <color name="attn_na">#484848</color>
+    <color name="attn_Non_Paid">#484848</color>
+
+
+    <color name="color_green_back">#8CC7C5</color>
+    <color name="color_green_four">#001F3D</color>
+
+    <color name="color_yellow_back">#FBE39C</color>
+    <color name="color_yellow_fore">#293253</color>
+
+
+
+
+</resources>

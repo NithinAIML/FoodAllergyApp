@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_border_for_message"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Digestive Problems"
+            android:textColor="@color/dark_red"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:drawableLeft="@drawable/baseline_double_arrow_24"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Stomach Upset"
+                android:textColor="@color/text_view_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:drawableLeft="@drawable/baseline_double_arrow_24"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Vomiting"
+                android:textColor="@color/text_view_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:drawableLeft="@drawable/baseline_double_arrow_24"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Stomach Ache"
+                android:textColor="@color/text_view_color"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

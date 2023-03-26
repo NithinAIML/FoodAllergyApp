@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="196dp"
+    android:background="@drawable/toolbar_gradient"
+    android:gravity="bottom|center_vertical"
+    android:orientation="vertical"
+    android:paddingStart="0dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="2dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/iv_for_navigation_drawer"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:src="@drawable/dummy_user"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="4dp"
+        app:civ_shadow="false"
+        app:civ_shadow_color="@color/white"
+        app:civ_shadow_radius="8dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="5dp"
+        android:paddingEnd="0dp">
+
+        <TextView
+            android:id="@+id/tv_name_for_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</LinearLayout>

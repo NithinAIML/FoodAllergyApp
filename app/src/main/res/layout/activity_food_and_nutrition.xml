@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.FoodAndNutritionActivity">
+
+    <include
+        layout="@layout/custom_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/RECOMMENDATIONS"
+                            android:textColor="@color/primaryColorRed"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_Dairy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.3"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/diet" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/DAIRY_PRODUCIS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_Meat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.3"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/meat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/MEAT_PRODUCIS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_Baked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.3"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/bread" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/BARED_PRODUCIS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Dairy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Raw Cream Butter"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Milk"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Cheese"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Cream"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Custard"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Meat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Mutton"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Rabbit"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Poultry"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Chicken"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Baked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Buns"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Biscuits"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Muffins"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Coffee Cake"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/REC"
+                        android:textColor="@color/primaryColorRed"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/soyaMilk"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/riceMilk"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/OATMilk"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/ALMONODMilk"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/HAZELNUT"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/COCONUT"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/POTATO"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray_bg" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

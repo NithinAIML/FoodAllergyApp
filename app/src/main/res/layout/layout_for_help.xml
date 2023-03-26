@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_border_for_message"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="How may I help you?"
+            android:textColor="@color/dark_red"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/tv_school_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/appName"
+                    android:textColor="@color/text_view_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/dash"
+                    android:textColor="@color/text_view_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:autoLink="web"
+                    android:gravity="start"
+                    android:linksClickable="true"
+                    android:padding="5dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text_view_color"
+                    android:textColorLink="@color/link_color"
+                    android:textIsSelectable="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:text="Email"
+                    android:textColor="@color/text_view_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/dash"
+                    android:textColor="@color/text_view_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:autoLink="web"
+                    android:gravity="start"
+                    android:linksClickable="true"
+                    android:padding="5dp"
+                    android:text="info@foodallergies.com"
+                    android:textColor="@color/text_view_color"
+                    android:textColorLink="@color/link_color"
+                    android:textIsSelectable="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:text="Contact No."
+                    android:textColor="@color/text_view_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/dash"
+                    android:textColor="@color/text_view_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:autoLink="web"
+                    android:gravity="start"
+                    android:linksClickable="true"
+                    android:padding="5dp"
+                    android:text="+91 9988776655"
+                    android:textColor="@color/text_view_color"
+                    android:textColorLink="@color/link_color"
+                    android:textIsSelectable="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:text="Alternate No."
+                    android:textColor="@color/text_view_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/dash"
+                    android:textColor="@color/text_view_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:autoLink="web"
+                    android:gravity="start"
+                    android:linksClickable="true"
+                    android:padding="5dp"
+                    android:text="+91 9988776699"
+                    android:textColor="@color/text_view_color"
+                    android:textColorLink="@color/link_color"
+                    android:textIsSelectable="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="You can contact our tech team for 8:00 To 10:00"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

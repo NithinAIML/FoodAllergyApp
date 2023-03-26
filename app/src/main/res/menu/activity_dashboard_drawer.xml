@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/nav_User"
+            android:icon="@drawable/add_user"
+            android:title="@string/user" />
+
+        <item
+            android:id="@+id/nav_FoodScanner"
+            android:icon="@drawable/scanner_icon"
+            android:title="@string/FoodScan" />
+
+        <item
+            android:id="@+id/nav_FoodAllEllergy"
+            android:icon="@drawable/foodallergies"
+            android:title="@string/FoodAllEllergy" />
+
+        <item
+            android:id="@+id/nav_Search"
+            android:icon="@drawable/baseline_search_24"
+            android:title="@string/Search" />
+
+        <item
+            android:id="@+id/nav_Help"
+            android:icon="@drawable/about_us_nevigation"
+            android:title="@string/help"
+            android:visible="true" />
+    </group>
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_navigation"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>
