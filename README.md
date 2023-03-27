@@ -76,6 +76,8 @@ Gradle:
       
       
 How to run the application:
+
+
 Install Android studio.
 
 Download FoodAllergyApp from Github.
@@ -100,6 +102,8 @@ Then the device will be added under Device Manager Virtual tab then click on Lau
 
 Click on Run app then you can see the functionality 
   
+
+
 Attaching the Functionality as follows:
   
 ![image](https://user-images.githubusercontent.com/55182135/228025797-7e8ab2c7-137e-41b4-96cc-5d4179108e18.png)
