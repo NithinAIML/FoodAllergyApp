@@ -86,14 +86,18 @@ How to run the application:
 Attaching the Functionality as follows:
   
   ![image](https://user-images.githubusercontent.com/55182135/228025797-7e8ab2c7-137e-41b4-96cc-5d4179108e18.png)
+  
   Click on APP:
     ![image](https://user-images.githubusercontent.com/55182135/228027973-d2800266-d736-4e71-85f0-3d85c4cb51d3.png)
+    
     ![image](https://user-images.githubusercontent.com/55182135/228025992-f2cb3698-ac78-4110-a78e-b80c5e729d64.png)
 
   Click on Menu:
   Click on User:
     ![image](https://user-images.githubusercontent.com/55182135/228028376-128ae704-0cc2-44aa-9aac-3c8566e888dc.png)
+    
     ![image](https://user-images.githubusercontent.com/55182135/228028668-e451be9a-02f8-4329-8c20-396a20b754f0.png)
+    
   Every field is editable and back functionality is implemented in all screens.
   
   View of the main interface
