@@ -1,9 +1,9 @@
 # FoodAllergyApp
 
-Tools Required:
+# Tools Required:
 Android Studio.
 
-Development Languages Used:
+# Development Languages Used:
 Java, Android.
 
 Would like to detail about the app in this README.
@@ -14,7 +14,7 @@ There are few important folders to be considered here which are as follows:
  App
  Gradle Scripts
  
- App
+ # App
    1. Manifests
    2. Java
    3. res
@@ -69,13 +69,13 @@ Res:
   xml
   
 
-Gradle:
+# Gradle:
   Build gradle:
       Integration of the android in the json format is present here.
       
       
       
-How to run the application:
+# How to run the application:
 
 
 Install Android studio.
@@ -100,7 +100,7 @@ You will be seeing a Android Virtual Device(AVD) in Virtual Device Configuration
 
 Then the device will be added under Device Manager Virtual tab then click on Launch the emulator, you will be seen launching the mobile emulator.
 
-Click on Run app then you can see the functionality 
+# Click on Run app then you can see the functionality 
   
 
 
@@ -130,7 +130,26 @@ View of the main interface
     
 After clicking on the functionalities present on the screens you will be able to run the functionality and see the things.
   
-  
+Every Functionality is accessable:
+
+Scanner: Click on scanner, then you will be given two operations to go ahead one is Camera and the other is Scanner functionality.
+Clicking on Camera will open the camera and it shall show the details of the food product along with the Symptoms associated when clicking on it you will be able to see the symptoms.
+
+Scanner And Recommendations: Click on scanner and recommendations, then you will be given two operations to go ahead one is Camera and the other is Scanner functionality. Click on Scanner and see it will open the sanning option and it will show the food product details along with recommendations.
+Here in the above functionlaity scanner functionality is static what ever user scans for now, always peanut bar details will be displayed.
+
+
+Food and Nutritions: Click on Foods and Nutritions there will be three options available in it which are as follows: Dairy Products, Meat Products, Baked Products and Recommendations.
+
+Click on each options you will be able to see relevant details but when you click on recommendations you will only be able to see milk products as a suggestions it is a static recommendations providing in the app.
+
+All Food Allergies: Click on Food Allergies then you will be able to see My Allergies, while clicking on these options you will be able to see relevant information.
+
+Search Functionality: In search functionality whatever you search in search bar we will give only one product details as a static information.
+
+My Profile: Click on My profile you will be able to see the information but not providing any functionality to edit and save it.
+
+
 
 
 
