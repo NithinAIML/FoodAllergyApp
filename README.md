@@ -77,39 +77,52 @@ Gradle:
       
 How to run the application:
 Install Android studio.
+
 Download FoodAllergyApp from Github.
+
 Import or Open the FoodAllergyApp into Android Studio.
+
 Right side of the panel you will be able to see Device Manager
+
 Click on Device Manager.
+
 Click on Virtual.
+
 Click on Create device.
+
 You will be seeing a Select Hardware in Virtual Device Configuration and by default Phone will be selected if not select phone and click on Next.
+
 You will be seeing a System Image in Virtual Device Configuration and by default Sv2 will be selected if not select Sv2 and click on Next.
+
 You will be seeing a Android Virtual Device(AVD) in Virtual Device Configuration, verify configuration and click on Finish.
+
 Then the device will be added under Device Manager Virtual tab then click on Launch the emulator, you will be seen launching the mobile emulator.
+
 Click on Run app then you can see the functionality 
   
 Attaching the Functionality as follows:
   
-  ![image](https://user-images.githubusercontent.com/55182135/228025797-7e8ab2c7-137e-41b4-96cc-5d4179108e18.png)
+![image](https://user-images.githubusercontent.com/55182135/228025797-7e8ab2c7-137e-41b4-96cc-5d4179108e18.png)
   
 Click on APP:
-  ![image](https://user-images.githubusercontent.com/55182135/228027973-d2800266-d736-4e71-85f0-3d85c4cb51d3.png)
+
+![image](https://user-images.githubusercontent.com/55182135/228027973-d2800266-d736-4e71-85f0-3d85c4cb51d3.png)
     
-  ![image](https://user-images.githubusercontent.com/55182135/228025992-f2cb3698-ac78-4110-a78e-b80c5e729d64.png)
+![image](https://user-images.githubusercontent.com/55182135/228025992-f2cb3698-ac78-4110-a78e-b80c5e729d64.png)
 
 Click on Menu:
 
-  ![image](https://user-images.githubusercontent.com/55182135/228028376-128ae704-0cc2-44aa-9aac-3c8566e888dc.png)
+![image](https://user-images.githubusercontent.com/55182135/228033259-0f7a9112-8ad6-42b0-841c-d3e746f3b0d5.png)
+
   
 Click on User:
     
-  ![image](https://user-images.githubusercontent.com/55182135/228028668-e451be9a-02f8-4329-8c20-396a20b754f0.png)
+![image](https://user-images.githubusercontent.com/55182135/228028668-e451be9a-02f8-4329-8c20-396a20b754f0.png)
     
 Every field is editable and back functionality is implemented in all screens.
 View of the main interface
     
-   ![image](https://user-images.githubusercontent.com/55182135/228030198-d2bf13a9-3b81-44bb-99e9-27d7ab599b6c.png)
+![image](https://user-images.githubusercontent.com/55182135/228030198-d2bf13a9-3b81-44bb-99e9-27d7ab599b6c.png)
     
 After clicking on the functionalities present on the screens you will be able to run the functionality and see the things.
   
