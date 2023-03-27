@@ -132,25 +132,35 @@ After clicking on the functionalities present on the screens you will be able to
   
 Every Functionality is accessable:
 
-Scanner: Click on scanner, then you will be given two operations to go ahead one is Camera and the other is Scanner functionality.
+# Scanner: 
+Click on scanner, then you will be given two operations to go ahead one is Camera and the other is Scanner functionality.
 Clicking on Camera will open the camera and it shall show the details of the food product along with the Symptoms associated when clicking on it you will be able to see the symptoms.
 
-Scanner And Recommendations: Click on scanner and recommendations, then you will be given two operations to go ahead one is Camera and the other is Scanner functionality. Click on Scanner and see it will open the sanning option and it will show the food product details along with recommendations.
+# Scanner And Recommendations: 
+Click on scanner and recommendations, then you will be given two operations to go ahead one is Camera and the other is Scanner functionality. Click on Scanner and see it will open the sanning option and it will show the food product details along with recommendations.
 Here in the above functionlaity scanner functionality is static what ever user scans for now, always peanut bar details will be displayed.
 
-
-Food and Nutritions: Click on Foods and Nutritions there will be three options available in it which are as follows: Dairy Products, Meat Products, Baked Products and Recommendations.
+# Food and Nutritions: 
+Click on Foods and Nutritions there will be three options available in it which are as follows: Dairy Products, Meat Products, Baked Products and Recommendations.
 
 Click on each options you will be able to see relevant details but when you click on recommendations you will only be able to see milk products as a suggestions it is a static recommendations providing in the app.
 
-All Food Allergies: Click on Food Allergies then you will be able to see My Allergies, while clicking on these options you will be able to see relevant information.
+# All Food Allergies: 
+Click on Food Allergies then you will be able to see My Allergies, while clicking on these options you will be able to see relevant information.
 
-Search Functionality: In search functionality whatever you search in search bar we will give only one product details as a static information.
+# Search Functionality: 
+In search functionality whatever you search in search bar we will give only one product details as a static information.
 
-My Profile: Click on My profile you will be able to see the information but not providing any functionality to edit and save it.
+# My Profile: 
+Click on My profile you will be able to see the information but not providing any functionality to edit and save it.
 
 
 
+# What one can do with the prototype.
+One will be able to see the functionality of the Food Allergy Scanner App by clicking the Scanner functionality, Scanner and Recommendations functionality, Foods and Nutrition, All Food Allergies. You will also be able to see Search Functionality and My Profile details.
+
+# what part of the prototype do not work.
+One will see static functionalities like Search, Recommendations and User Profile section are static. In Food Scanner, camera and scanner functionality is implemented in emulator we are displaying the static information on it to show how the prototype work.
 
 
   
