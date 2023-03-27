@@ -116,7 +116,7 @@ Click on APP:
 
 Click on Menu:
 
-![image](https://user-images.githubusercontent.com/55182135/228033259-0f7a9112-8ad6-42b0-841c-d3e746f3b0d5.png)
+
 
   
 Click on User:
