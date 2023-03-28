@@ -15,7 +15,7 @@ import com.db.foodallergyapp.R;
 import java.util.Objects;
 
 public class FoodAndNutritionActivity extends AppCompatActivity {
-
+private boolean isHidden = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +69,14 @@ public class FoodAndNutritionActivity extends AppCompatActivity {
         cv_rec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ll_rec.setVisibility(View.VISIBLE);
+                if(!isHidden){
+                    ll_rec.setVisibility(View.VISIBLE);
+                    isHidden = true;
+                }else {
+                    ll_rec.setVisibility(View.GONE);
+                    isHidden = false;
+                }
+
             }
         });
     }

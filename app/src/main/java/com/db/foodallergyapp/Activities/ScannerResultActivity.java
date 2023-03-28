@@ -20,7 +20,7 @@ import com.db.foodallergyapp.R;
 import java.util.Objects;
 
 public class ScannerResultActivity extends AppCompatActivity {
-
+private boolean isHidden = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +55,14 @@ public class ScannerResultActivity extends AppCompatActivity {
         cv_Rec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ll_rec_sec.setVisibility(View.VISIBLE);
+                if(!isHidden){
+                    ll_rec_sec.setVisibility(View.VISIBLE);
+                    isHidden = true;
+                }else{
+                    ll_rec_sec.setVisibility(View.GONE);
+                    isHidden = false;
+                }
+
             }
         });
 
@@ -64,6 +71,7 @@ public class ScannerResultActivity extends AppCompatActivity {
             int intValue = mIntent.getIntExtra("mFromCameraOrRec", 0);
             LinearLayout ll_rec = findViewById(R.id.ll_rec);
             if (intValue == 1) {
+
                 ll_rec.setVisibility(View.GONE);
             } else if (intValue == 2) {
                 ll_rec.setVisibility(View.VISIBLE);

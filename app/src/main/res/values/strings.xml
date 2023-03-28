@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Food Allergy App</string>
     <string name="dashboard">Food &amp; Allergy Scanner</string>
-    <string name="name">John Cotter</string>
+    <string name="name">Nithin</string>
     <string name="email">Email</string>
     <string name="menu_logout">About Us</string>
     <string name="user">User</string>
@@ -16,18 +16,18 @@
     <string name="scanner">Scanner</string>
     <string name="scannerAndRec">Scanner And Recommendations</string>
     <string name="Food">Foods And Nutrition</string>
-    <string name="JohnCotter">John Cotter</string>
-    <string name="emailJohn">johncotter1998@gmail.com</string>
+    <string name="JohnCotter">Nithin</string>
+    <string name="emailJohn">nithin.b@umich.edu</string>
     <string name="aboutFoodAllergies">Food allergies occur when the body\'s immune system reacts to certain proteins in food. Food allergic reactions vary in severity from mild symptoms involving hives and lip swelling to severe, life-threatening symptoms, often called anaphylaxis, that may involve fatal respiratory problems and shock</string>
     <string name="pleaseWait">Please Wait !!</string>
     <string name="title">Title</string>
     <string name="profile">My Profile</string>
     <string name="fatherName">Father Name</string>
-    <string name="father">John Battrte</string>
+    <string name="father">Manoj</string>
     <string name="phone">Contact No.</string>
     <string name="dob">Date Of Birth</string>
-    <string name="mob">+1 9988776655</string>
-    <string name="dob1">12-04-1990</string>
+    <string name="mob">+19470000000</string>
+    <string name="dob1">11-27-1994</string>
     <string name="address">Address</string>
     <string name="address1">Farmington hills, Michigan USA</string>
     <string name="bloodGroup">Bood Group</string>
@@ -41,7 +41,7 @@
     <string name="soyaMilk">SOYA MILK</string>
     <string name="riceMilk">RICE MILK</string>
     <string name="OATMilk">OAT MILK</string>
-    <string name="ALMONODMilk">ALMONO MILK</string>
+    <string name="ALMONODMilk">ALMOND MILK</string>
     <string name="HAZELNUT">HAZELNUT MILK</string>
     <string name="COCONUT">COCONUT MILK</string>
     <string name="POTATO">POTATO MILK</string>

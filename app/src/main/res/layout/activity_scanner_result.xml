@@ -251,41 +251,6 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
-                        android:drawablePadding="10dp"
-                        android:gravity="center_vertical"
-                        android:padding="10dp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.1"
-                        android:drawablePadding="10dp"
-                        android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:text=":"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.5"
-                        android:drawablePadding="10dp"
-                        android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:text="HIVES"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
             </LinearLayout>
 
             <androidx.cardview.widget.CardView
@@ -430,7 +395,7 @@
                         android:drawablePadding="10dp"
                         android:gravity="center_vertical"
                         android:padding="10dp"
-                        android:text="@string/soyaMilk"
+                        android:text="Oat Bar"
                         android:textColor="@color/colorPrimaryDark"
                         android:textStyle="bold"
                         app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
@@ -447,7 +412,7 @@
                         android:drawablePadding="10dp"
                         android:gravity="center_vertical"
                         android:padding="10dp"
-                        android:text="@string/riceMilk"
+                        android:text="White Bean Bar"
                         android:textColor="@color/colorPrimaryDark"
                         android:textStyle="bold"
                         app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
@@ -464,7 +429,7 @@
                         android:drawablePadding="10dp"
                         android:gravity="center_vertical"
                         android:padding="10dp"
-                        android:text="@string/OATMilk"
+                        android:text="Peas Bar"
                         android:textColor="@color/colorPrimaryDark"
                         android:textStyle="bold"
                         app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
@@ -475,73 +440,6 @@
                         android:layout_margin="10dp"
                         android:background="@color/gray_bg" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawablePadding="10dp"
-                        android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:text="@string/ALMONODMilk"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textStyle="bold"
-                        app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="10dp"
-                        android:background="@color/gray_bg" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawablePadding="10dp"
-                        android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:text="@string/HAZELNUT"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textStyle="bold"
-                        app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="10dp"
-                        android:background="@color/gray_bg" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawablePadding="10dp"
-                        android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:text="@string/COCONUT"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textStyle="bold"
-                        app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="10dp"
-                        android:background="@color/gray_bg" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawablePadding="10dp"
-                        android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:text="@string/POTATO"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textStyle="bold"
-                        app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="10dp"
-                        android:background="@color/gray_bg" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
