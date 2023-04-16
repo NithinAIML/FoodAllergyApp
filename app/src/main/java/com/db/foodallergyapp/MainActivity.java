@@ -12,6 +12,7 @@ import android.os.Looper;
 import android.provider.MediaStore;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -51,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mActionBarDrawerToggle;
     private TextView tv_riban;
-    private CardView cv_scanner, cv_scanner_And_Rec, cv_FoodAndNutrition, cv_AddAllFood, cv_SearchFood,
-            cv_MyProfile;
+    private CardView cv_scanner_And_Rec, cv_FoodAndNutrition, cv_AddAllFood, cv_SearchFood,
+            cv_MyProfile, cv_help;
     private int mFromCameraOrRec = 0;
 
     @Override
@@ -104,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if (id == R.id.nav_FoodScanner) {
                     mDrawerLayout.closeDrawers();
-                    mOpenFileChooser(1);
+                    mCameraPermissionDialog();
 
                 } else if (id == R.id.nav_FoodAllEllergy) {
                     mDrawerLayout.closeDrawers();
@@ -149,12 +150,8 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
-        cv_scanner.setOnClickListener(view -> {
-            mOpenFileChooser(1);
-        });
-
         cv_scanner_And_Rec.setOnClickListener(view -> {
-            mOpenFileChooser(2);
+            mCameraPermissionDialog();
         });
 
         cv_FoodAndNutrition.setOnClickListener(view -> {
@@ -225,6 +222,39 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        cv_help = findViewById(R.id.cv_help);
+        cv_help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getHelp();
+            }
+        });
+
+    }
+
+    private void mCameraPermissionDialog() {
+        Dialog mDialog = new Dialog(MainActivity.this);
+        mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        mDialog.setContentView(R.layout.layout_for_camera_permission);
+        mDialog.setCancelable(true);
+        mDialog.show();
+
+        Button btn_denied = mDialog.findViewById(R.id.btn_denied);
+        btn_denied.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mDialog.dismiss();
+            }
+        });
+
+        Button btn_allow = mDialog.findViewById(R.id.btn_allow);
+        btn_allow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mDialog.dismiss();
+                mOpenFileChooser(2);
+            }
+        });
     }
 
     private boolean checkPermission() {
@@ -307,13 +337,6 @@ public class MainActivity extends AppCompatActivity {
             mIntent.putExtra("mFromCameraOrRec", 2);
         }
         startActivity(mIntent);
-
-//        ScanOptions mOptions = new ScanOptions();
-//        mOptions.setPrompt("Scan & Get Instant Result");
-//        mOptions.setBeepEnabled(true);
-//        mOptions.setOrientationLocked(true);
-//        mOptions.setCaptureActivity(CaptureAct.class);
-//        barLanucher.launch(mOptions);
     }
 
     private void mTakePictureIntent() {
@@ -381,7 +404,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void findViewByIDs() {
         tv_riban = findViewById(R.id.tv_riban);
-        cv_scanner = findViewById(R.id.cv_scanner);
         cv_scanner_And_Rec = findViewById(R.id.cv_scanner_And_Rec);
         cv_FoodAndNutrition = findViewById(R.id.cv_FoodAndNutrition);
     }

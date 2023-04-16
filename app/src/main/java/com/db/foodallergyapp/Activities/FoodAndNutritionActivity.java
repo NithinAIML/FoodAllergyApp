@@ -9,13 +9,15 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 
 import com.db.foodallergyapp.R;
 
 import java.util.Objects;
 
 public class FoodAndNutritionActivity extends AppCompatActivity {
-private boolean isHidden = false;
+    private boolean isClicked = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,39 +44,54 @@ private boolean isHidden = false;
         cv_Dairy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                cv_Dairy.setBackground(ContextCompat.getDrawable(FoodAndNutritionActivity.this, R.drawable.selected));
+                cv_Meat.setBackground(null);
+                cv_Baked.setBackground(null);
+
                 ll_Dairy.setVisibility(View.VISIBLE);
                 ll_Baked.setVisibility(View.GONE);
                 ll_Meat.setVisibility(View.GONE);
+                ll_rec.setVisibility(View.VISIBLE);
             }
         });
 
         cv_Meat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                cv_Meat.setBackground(ContextCompat.getDrawable(FoodAndNutritionActivity.this, R.drawable.selected));
+                cv_Dairy.setBackground(null);
+                cv_Baked.setBackground(null);
+
                 ll_Meat.setVisibility(View.VISIBLE);
                 ll_Dairy.setVisibility(View.GONE);
                 ll_Baked.setVisibility(View.GONE);
+                ll_rec.setVisibility(View.GONE);
             }
         });
 
         cv_Baked.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                cv_Baked.setBackground(ContextCompat.getDrawable(FoodAndNutritionActivity.this, R.drawable.selected));
+                cv_Dairy.setBackground(null);
+                cv_Meat.setBackground(null);
+
                 ll_Baked.setVisibility(View.VISIBLE);
                 ll_Meat.setVisibility(View.GONE);
                 ll_Dairy.setVisibility(View.GONE);
+                ll_rec.setVisibility(View.GONE);
             }
         });
 
         cv_rec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!isHidden){
+                if (!isClicked) {
+                    isClicked = true;
                     ll_rec.setVisibility(View.VISIBLE);
-                    isHidden = true;
-                }else {
+                } else {
+                    isClicked = false;
                     ll_rec.setVisibility(View.GONE);
-                    isHidden = false;
                 }
 
             }

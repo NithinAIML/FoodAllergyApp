@@ -54,7 +54,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="24dp"
-                                android:text="@string/fatherName"
+                                android:text="Name"
                                 android:textSize="9dp" />
 
                             <TextView
@@ -64,7 +64,7 @@
                                 android:drawableLeft="@drawable/mother"
                                 android:drawablePadding="10dp"
                                 android:gravity="center_vertical"
-                                android:text="@string/father" />
+                                android:text="Food Allergy Team" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -87,7 +87,7 @@
                                 android:layout_height="wrap_content"
                                 android:drawablePadding="10dp"
                                 android:gravity="center_vertical"
-                                android:text="@string/mob"
+                                android:text="+19473360379"
                                 app:drawableLeftCompat="@drawable/shape_1" />
 
                             <View

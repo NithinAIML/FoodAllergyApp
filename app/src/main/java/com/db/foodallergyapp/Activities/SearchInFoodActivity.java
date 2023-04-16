@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 import com.db.foodallergyapp.R;
 
@@ -37,6 +38,9 @@ public class SearchInFoodActivity extends AppCompatActivity {
         mTitle.setText(getResources().getString(R.string.Search));
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
+        CardView cv_cow_milk = findViewById(R.id.cv_cow_milk);
+        CardView cv_peanuts = findViewById(R.id.cv_peanuts);
+
         LinearLayout ll_parent = findViewById(R.id.ll_parent);
         EditText et_search = findViewById(R.id.et_search);
         et_search.addTextChangedListener(new TextWatcher() {
@@ -56,7 +60,8 @@ public class SearchInFoodActivity extends AppCompatActivity {
                     String mStr = editable.toString().trim();
                     if (mStr.equalsIgnoreCase("")) {
                         if (isSearchClicked) {
-                            ll_parent.setVisibility(View.GONE);
+                            cv_cow_milk.setVisibility(View.GONE);
+                            cv_peanuts.setVisibility(View.GONE);
                         }
                     }
                 } catch (Exception e) {
@@ -80,7 +85,16 @@ public class SearchInFoodActivity extends AppCompatActivity {
 
                 new Handler().postDelayed(() -> {
                     mDialog.dismissWithAnimation();
-                    ll_parent.setVisibility(View.VISIBLE);
+
+                    if (String.valueOf(et_search.getText()).trim().equalsIgnoreCase("Cow Milk")
+                            || String.valueOf(et_search.getText()).trim().equalsIgnoreCase("Milk")) {
+                        cv_cow_milk.setVisibility(View.VISIBLE);
+                        cv_peanuts.setVisibility(View.GONE);
+
+                    } else if (String.valueOf(et_search.getText()).trim().equalsIgnoreCase("Peanut")) {
+                        cv_cow_milk.setVisibility(View.GONE);
+                        cv_peanuts.setVisibility(View.VISIBLE);
+                    }
                     isSearchClicked = true;
                 }, 2000);
 

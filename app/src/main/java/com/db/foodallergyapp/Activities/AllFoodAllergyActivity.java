@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 
 import com.db.foodallergyapp.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -42,18 +43,26 @@ public class AllFoodAllergyActivity extends AppCompatActivity {
         LinearLayout ll_FoodAllergies = findViewById(R.id.ll_FoodAllergies);
 
         CardView cv_MyAllergies = findViewById(R.id.cv_MyAllergies);
+        CardView cv_FoodAllergies = findViewById(R.id.cv_FoodAllergies);
+
         cv_MyAllergies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                cv_MyAllergies.setBackground(ContextCompat.getDrawable(AllFoodAllergyActivity.this, R.drawable.selected));
+                cv_FoodAllergies.setBackground(null);
+
                 ll_MyAllergies.setVisibility(View.VISIBLE);
                 ll_FoodAllergies.setVisibility(View.GONE);
             }
         });
 
-        CardView cv_FoodAllergies = findViewById(R.id.cv_FoodAllergies);
         cv_FoodAllergies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                cv_FoodAllergies.setBackground(ContextCompat.getDrawable(AllFoodAllergyActivity.this, R.drawable.selected));
+                cv_MyAllergies.setBackground(null);
+
                 ll_MyAllergies.setVisibility(View.GONE);
                 ll_FoodAllergies.setVisibility(View.VISIBLE);
             }
@@ -78,7 +87,6 @@ public class AllFoodAllergyActivity extends AppCompatActivity {
             btn_save.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    mDialog.dismiss();
                     if (et_name.getText().toString().trim().equalsIgnoreCase("")) {
                         Toast.makeText(AllFoodAllergyActivity.this, "Empty Allergy Name !!", Toast.LENGTH_SHORT).show();
 
@@ -89,6 +97,7 @@ public class AllFoodAllergyActivity extends AppCompatActivity {
                         Toast.makeText(AllFoodAllergyActivity.this, "Empty Symptoms Name !!", Toast.LENGTH_SHORT).show();
 
                     } else {
+                        mDialog.dismiss();
                         SweetAlertDialog dialog = new SweetAlertDialog(AllFoodAllergyActivity.this, SweetAlertDialog.PROGRESS_TYPE);
                         dialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
                         dialog.setTitleText(getResources().getString(R.string.pleaseWait));

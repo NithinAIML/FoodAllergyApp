@@ -58,76 +58,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_cow_milk"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                app:cardCornerRadius="6dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/diet" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="@string/soyaMilk"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Calories : 880g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Total Fat : 50g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Vitamin : B, D3"
-                            android:textSize="13dp" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:visibility="gone"
                 app:cardCornerRadius="6dp"
                 app:cardElevation="4dp">
 
@@ -149,13 +87,13 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="@string/riceMilk"
+                            android:text="@string/cow_milk"
                             android:textColor="@color/colorPrimaryDark"
-                            android:textSize="16dp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -163,161 +101,54 @@
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="Calories : 880g"
-                            android:textSize="13dp" />
+                            android:text="Calories : 149" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="Total Fat : 50g"
-                            android:textSize="13dp" />
+                            android:text="Protein : 8 grams" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="Vitamin : B, D3"
-                            android:textSize="13dp" />
+                            android:text="Total Fat : 8 grams" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Carbohydrates : 12 grams" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Fiber : 0 grams" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Sugar : 12 grams" />
+
                     </LinearLayout>
-
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_peanuts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                app:cardCornerRadius="6dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/bread" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="@string/OATMilk"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Calories : 880g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Total Fat : 50g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Vitamin : B, D3"
-                            android:textSize="13dp" />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="6dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/diet" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="@string/ALMONODMilk"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Calories : 880g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Total Fat : 50g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Vitamin : B, D3"
-                            android:textSize="13dp" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:visibility="gone"
                 app:cardCornerRadius="6dp"
                 app:cardElevation="4dp">
 
@@ -334,7 +165,7 @@
                         android:src="@drawable/meat" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -343,9 +174,9 @@
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="@string/HAZELNUT"
+                            android:text="@string/peanut"
                             android:textColor="@color/colorPrimaryDark"
-                            android:textSize="16dp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -353,7 +184,14 @@
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="Calories : 880g"
+                            android:text="Per : 36.5 grams" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Total Fat : 18 grams"
                             android:textSize="13dp" />
 
                         <TextView
@@ -361,7 +199,15 @@
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="Total Fat : 50g"
+                            android:text="Saturated : 3 grams" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Trans Fat : 0 grams"
                             android:textSize="13dp" />
 
                         <TextView
@@ -369,139 +215,23 @@
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="Vitamin : B, D3"
-                            android:textSize="13dp" />
+                            android:text="Cholesterol : 0 grams" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Sodium : 2 grams" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Potassium : 0 grams" />
 
                     </LinearLayout>
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="6dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/bread" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="@string/COCONUT"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Calories : 880g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Total Fat : 50g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Vitamin : B, D3"
-                            android:textSize="13dp" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="6dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/bread" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="@string/OATMilk"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Calories : 880g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Total Fat : 50g"
-                            android:textSize="13dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="Vitamin : B, D3"
-                            android:textSize="13dp" />
-
-                    </LinearLayout>
-
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

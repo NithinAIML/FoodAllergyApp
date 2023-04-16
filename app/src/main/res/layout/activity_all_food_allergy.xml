@@ -295,7 +295,7 @@
                             android:drawablePadding="10dp"
                             android:gravity="center_vertical"
                             android:padding="10dp"
-                            android:text="Milk : CMPH"
+                            android:text="Milk : CASEIN, WHEY"
                             android:textColor="@color/colorPrimaryDark"
                             android:textStyle="bold"
                             app:drawableLeftCompat="@drawable/baseline_double_arrow_24" />
